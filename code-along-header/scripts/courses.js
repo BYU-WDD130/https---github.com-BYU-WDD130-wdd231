@@ -1,6 +1,6 @@
   const featuredItems = [
   {
-    name: "Web Fudamentals",
+    name: "Web Fundamentals",
     subject: "wdd",
     number: "130",
     credits: "2"
@@ -16,26 +16,26 @@
     name: "Dynamic Web fundamentals",
     subject:  "cse",
     number: "131",
-    credits: "images/dadcake2.webp",
+    credits: "2",
 
   },
   {
     name: "Programing with clases",
     subject: "cse",
     number: "210",
-    credits: "images/vanilla-slice.webp",
+    credits: "2",
   },
   {
     name: "Web Fronted Development I",
-    subject:  " wdd",
+    subject:  "wdd",
     number: "231",
-    credits: "images/chocoflan5.webp",
+    credits: "2",
   },
   {
     name: "Proraming whith functions",
     subject:  "cse",
     number: "111",
-    credits: "images/semita2.webp",
+    credits: "2",
   },
 
   ];

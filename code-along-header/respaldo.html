@@ -5,12 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/normalize.css">
     <title>Document</title>
-        <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/large.css">
-    <script src="scripts/courses.js"></script>
-
-
+    <script src="scripts/courserespaldo.js"></script>
 <!-- -->
 </head>
 <header>
@@ -48,18 +46,16 @@
     </section>
 <section class="card" id="certificates">
     <h2>Web Certificate Courses</h2>
-
+    
     <div class="filters">
-      <button onclick="filterMenu('all')">All</button>
-      <button onclick="filterMenu('cse')">CSE</button>
-      <button onclick="filterMenu('wdd')">WDD</button>
+                <button onclick="filterMenu('all')">All</button>
+                <button onclick="filterMenu('cse')">CSE</button>
+                <button onclick="filterMenu('wdd')">WDD</button>
     </div> 
   
   </section>
-    <div id="menu-items" class="items-grid"></div>
-
-      <ul id="courses" class="course-list"></ul>
-      <p>Total Credits: <span id="credits">0</span></p>
+  <div id="menu-items"></div>
+<p id="total-credits"><strong>Total Credits:</strong> 0</p>
     
    </div>
     </main>
@@ -72,8 +68,10 @@
       </div>
       <p> copyright symbol and current year</p>
       <p> Last Modified</p>
+          <script src="scripts/getdate.js"></script>
     </footer>
-    <script src="scripts/navigation.js"></script>
+    <script src="scripts/navigation.js"defer></script>
+
 </body>
 </html>
 

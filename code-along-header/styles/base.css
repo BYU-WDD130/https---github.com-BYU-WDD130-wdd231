@@ -35,6 +35,8 @@ header span {
 
 .hamburger {
     background: none;
+    justify-content: center;
+    align-items: center;
     border: none;
     color: #304058;
     cursor: pointer;
@@ -45,11 +47,13 @@ header span {
 .hamburger::before {
     content: "\2630";
     font-size: 2rem;
+
 }
 
 .hamburger.show::before {
     content: "\2715";
     font-size: 2rem;
+
 }
 
 /****navigation****/
@@ -89,15 +93,6 @@ header span {
 
 }
 
-.item-grid{
-
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1.5rem;
-}
-
-
-
 #menu-items {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -125,10 +120,23 @@ header span {
 
 button {
   background-color: #ddd;
-  color: white;
+  color: rgb(20, 14, 14);
   border: none;
-  border-radius: 8px;
+  border-radius: 2px;
   padding: 10px 16px;
+  margin-right: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.2s;
+
+}
+
+#ham-btn.hamburger {
+
+  color: rgb(19, 17, 17);
+  border: none;
+  border-radius: px;
+  padding: 10px 1px;
   margin-right: 8px;
   cursor: pointer;
   font-size: 1rem;
@@ -136,7 +144,8 @@ button {
 }
 
 button:hover {
-  background-color: rgb(110, 134, 241);
+
+  outline: 2px solid #7fec8d;
 }
 
 button:focus {
