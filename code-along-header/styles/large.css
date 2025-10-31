@@ -1,6 +1,7 @@
 @media only screen and (min-width: 38rem) {
 
   .section {
+      background-color: aliceblue;
       display: grid;
       grid-template-columns: 2fr 1fr;
       margin: 5px;
@@ -42,6 +43,14 @@ h2 {
 .filters {
  text-align: center;
  padding: 15px;
+
+}
+
+
+#certificates {
+  border: solid 1px #ddd;
+  border-radius: 5px;
+  background-color: aliceblue;
 }
 
 .navigation ul {

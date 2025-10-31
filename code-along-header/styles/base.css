@@ -9,8 +9,13 @@ h1 {
     color: #3D405B;
 }
 
+.section {
+      background-color: aliceblue;
+}
 
-
+.certificated{
+      background-color: aliceblue;
+}
 header {
     display: grid;
     grid-template-columns: 24px auto 44px;
