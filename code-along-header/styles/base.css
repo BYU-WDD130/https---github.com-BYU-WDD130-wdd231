@@ -112,6 +112,11 @@ header span {
     align-items: center;
 }
 
+.card {
+    margin: 5px;
+}
+
+
 .item-card {
   display: flex;
   gap: 10px;
@@ -139,8 +144,8 @@ h2 {
     text-align: center;
 }
 
-#filter {
-  align-items: center;
+.filters {
+ text-align: center;
 }
 
 button {
@@ -178,6 +183,16 @@ button:focus {
   outline-offset: 2px;
 }
 
+#about-me {
+  border: 1px solid #ddd ;
+  margin: 0;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.photo {
+    text-align: center;
+}
 
 
 footer {

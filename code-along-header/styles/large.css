@@ -1,11 +1,12 @@
 @media only screen and (min-width: 38rem) {
 
   .section {
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-
-        height: auto;
-        gap: 10px;
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      margin: 5px;
+      height: auto;
+      gap: 10px;
+      height: 100%;
     }
 
 
@@ -19,7 +20,10 @@
         grid-template-columns: 24px auto;
     }
 
+.photo {
+   text-align: center;
 
+}
   .hamburger {
       display: none;
   }
@@ -30,14 +34,15 @@
 
   }
 
-#filter {
-  align-items: center;
+.filters {
+ text-align: center;
 }
 
 .navigation ul {
     display: flex;
     gap: 10px;
     justify-content: center;
+
 }
 
 .hamburger {
@@ -45,5 +50,17 @@
 
 
 }
-    
+   
+#about-me {
+  border: 1px solid #ddd ;
+  margin: 0;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.footer {
+margin: .5rem auto;
+
+}
+
 }
