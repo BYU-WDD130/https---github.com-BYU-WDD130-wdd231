@@ -85,5 +85,3 @@ function saveVisitCount() {
     console.log(`Welcome back! You've visited ${count} times.`);
   }
 }
-
-

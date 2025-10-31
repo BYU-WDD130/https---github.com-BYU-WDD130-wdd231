@@ -17,7 +17,7 @@
   <button id="ham-btn" class="hamburger"></button>
      <nav id="nav-bar" class="navigation">
       <ul>
-        <li ><a href="index.html">Home</a></li>
+        <li class="current"><a href="index.html">Home</a></li>
         <li ><a href="about.html">Chamber</a></li>
         <li><a href="contact.html">Final</a></li>
     </ul>
@@ -28,6 +28,34 @@
     <nav></nav>
     <main>
       <h1>Home</h1>
+ <div class="section">
+   <section class="card" id="about-me">
+     <h2> About me </h2>   
+<p> Hello! My name is Dery Henriquez, and I am currently enrolled in the WDD231. 
+    I have a passion for web development and design, and I am excited to learn more 
+    about creating engaging and user-friendly websites. In my free time, I enjoy to practice Jiujitsu with my kids 
+    and exploring new technologies. I look forward to sharing my journey 
+    and projects with you through this website. Thank you for visiting!</p>
+
+   </section>
+
+   <section class="card photo" id="photo">
+
+        <h2>Student Photo</h2>
+        <img src="images/profile.jpg" alt="student photo" width="200" height="250">
+    </section>
+<section class="card" id="certificates">
+
+    <h2>Web Certificate Courses</h2>
+    <div class="filters">
+                <button onclick="filterMenu('True')">All</button>
+                <button onclick="filterMenu('false')">CSE</button>
+                <button onclick="filterMenu('false')">WDD</button>
+    </div>
+      <ul id="courses" class="course-list"></ul>
+      <p>Total Credits: <span id="credits">0</span></p>
+      </section>
+   </div>
     </main>
     <footer>
       <div class="social">
@@ -42,3 +70,4 @@
     <script src="scripts/navigation.js"></script>
 </body>
 </html>
+
