@@ -20,6 +20,11 @@ header {
     column-gap: 8px;;
 }
 
+nav {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+}
+
 header img {
     display: block;
     width: 100%;
