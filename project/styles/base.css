@@ -20,6 +20,8 @@ header {
     column-gap: 8px;;
 }
 
+
+
 header img {
     display: block;
     width: 100%;
@@ -30,6 +32,33 @@ header img {
 header span {
     font-size: 1.5rem;
     color: #304058;
+}
+
+/*********Navigation***********/
+.nav {
+    display: none;
+  
+}
+
+.nav.show{
+    display: block;
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+
+
+.navigation a {
+    display: block;
+    padding: .5rem 10px;
+    color: #3D405B;
+    text-decoration: none;
+    border-bottom: 1px solid #ddd;
 }
 
 .hamburger {

@@ -7,32 +7,58 @@
     <meta author="Dery Henriquez">
     <title></title>
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/normal.css">
+    <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/large.css">
 
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/courses.js"defer></script>
+    <script src="scripts/dates.js"defer></script>
 </head>
 <header>
   <img src="images/logo.svg" alt="site logo" width="115" height="115">    
     <span>Project Index Header</span>
-   <nav>
-      <button id="ham-btn" class="hamburger"></button>
-        <a href="index.html">Home</a>
-        <a href="about.html">Chamber</a>
-        <a href="contact.html">Final</a>
-
+   <button id="ham-btn" class="hamburger"></button>
+   <nav class="nav-bar" id="navigation">
+      <ul>
+        <li class="current"><a href="#">New Events</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">Chamber</a></li>
+        <li><a href="contact.html">Final</a></li>
+    </ul>
+ </nav>
 </header>
 <main>
-    <h1>Project Index Main Content</h1>
+ <h1>Home</h1> 
+ <div class="section">
+   <section class="card" id="about-me">
+     <h2> About me </h2>   
+<p> Hello! My name is Dery Henriquez, and I am currently enrolled in the WDD231. 
+    I have a passion for web development and design, and I am excited to learn more 
+    about creating engaging and user-friendly websites. In my free time, I enjoy to practice Jiujitsu with my kids 
+    and exploring new technologies. I look forward to sharing my journey 
+    and projects with you through this website. Thank you for visiting!</p>
 
-    <section>
-        <h2>About me </h2>
-     </section>
+   </section>
 
-     <aside>
+   <section class="card photo" id="photo">
 
-        <h3>Student Photo</h3>
+        <h2>Student Photo</h2>
         <img src="images/profile.jpg" alt="student photo" width="200" height="250">
-     </aside>
+    </section>
+
+
+<section class="card" id="certificates">
+
+    <h2>Web Certificate Courses</h2>
+    <div class="filters">
+                <button onclick="filterMenu('True')">All</button>
+                <button onclick="filterMenu('false')">CSE</button>
+                <button onclick="filterMenu('false')">WDD</button>
+    </div>
+      <ul id="courses" class="course-list"></ul>
+      <p>Total Credits: <span id="credits">0</span></p>
+      </section>
+   </div>
 </main>
 <footer>
           <div class="social">
@@ -44,7 +70,7 @@
      <p> &copy; <span id="currentyear"></span> Dery Henriquez. New Jersey. </p> 
    <p id="LastModified"></p>
       </footer>
-          <script src="scripts/navigation.js"></script>
+
 <body>
     
 </body>

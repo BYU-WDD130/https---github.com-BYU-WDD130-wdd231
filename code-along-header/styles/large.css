@@ -8,7 +8,9 @@
         grid-template-columns: 24px auto;
     }
 
-
+.navigation {
+    display: block;
+  }
 
 
 .hamburger {

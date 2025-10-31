@@ -20,10 +20,7 @@ header {
     column-gap: 8px;;
 }
 
-nav {
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-}
+
 
 header img {
     display: block;
@@ -55,6 +52,17 @@ header span {
     content: "\2715";
     font-size: 2rem;
 }
+
+.nav{
+    display: none;
+}
+
+.nav.show{
+    display: block;
+
+}
+
+nav ul {display: flex;}
 
 footer {
     background-color: #eee;
