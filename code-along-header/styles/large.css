@@ -8,10 +8,22 @@
         grid-template-columns: 24px auto;
     }
 
+
+  .hamburger {
+      display: none;
+  }
+
+  
 .navigation {
     display: block;
   }
 
+
+.navigation ul {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
 
 .hamburger {
   display: none;
