@@ -1,5 +1,16 @@
 @media only screen and (min-width: 38rem) {
-      header, main, nav, footer {
+
+  .section {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        height: auto;
+        gap: 10px;
+    }
+
+
+
+  header, main, nav, footer {
         max-width: 900px;
         margin: 0 auto;
       }
@@ -16,8 +27,12 @@
   
 .navigation {
     display: block;
+
   }
 
+#filter {
+  align-items: center;
+}
 
 .navigation ul {
     display: flex;
