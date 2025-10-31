@@ -1,39 +1,39 @@
   const featuredItems = [
   {
     name: "Web Fudamentals",
-    subject: "WDD",
+    subject: "wdd",
     number: "130",
     credits: "2"
    },
   {
     name: "Introduction to Programming",
-    subject:  "CSE",
+    subject:  "cse",
     number: "110",
     credits:"2",  
 
   },
   {
     name: "Dynamic Web fundamentals",
-    subject:  "CSE",
+    subject:  "cse",
     number: "131",
     credits: "images/dadcake2.webp",
 
   },
   {
     name: "Programing with clases",
-    subject: "CSE",
+    subject: "cse",
     number: "210",
     credits: "images/vanilla-slice.webp",
   },
   {
     name: "Web Fronted Development I",
-    subject:  " WDD",
+    subject:  " wdd",
     number: "231",
     credits: "images/chocoflan5.webp",
   },
   {
     name: "Proraming whith functions",
-    subject:  "CSE",
+    subject:  "cse",
     number: "111",
     credits: "images/semita2.webp",
   },
@@ -41,13 +41,9 @@
   ];
 
 function filterMenu(subject) {
-  let itemsToShow = [];
-
-  if (subject === "all") {
-    itemsToShow = featuredItems;
-  } else {
-    itemsToShow = featuredItems.filter(item => item.subject === subject);
-  }
+  let itemsToShow = subject === "all"
+    ? featuredItems
+    : featuredItems.filter(item => item.subject === subject);
 
   displayMenuItems(itemsToShow);
 }
@@ -65,9 +61,10 @@ function displayMenuItems(items) {
     const card = document.createElement("div");
     card.className = "item-card";
     card.innerHTML = `
-      <img src="${item.image}" alt="${item.name}" loading="lazy">
       <h3>${item.name}</h3>
-      <p>${item.description || item.price || ''}</p>
+      <p><strong>Subject:</strong> ${item.subject.toUpperCase()}</p>
+      <p><strong>Course #:</strong> ${item.number}</p>
+      <p><strong>Credits:</strong> ${item.credits}</p>
     `;
     container.appendChild(card);
   });
@@ -80,8 +77,14 @@ function saveVisitCount() {
   localStorage.setItem(key, count);
 
   if (count === 1) {
-    console.log(`Welcome! This is your first visit.`);
+    console.log("Welcome! This is your first visit.");
   } else {
     console.log(`Welcome back! You've visited ${count} times.`);
   }
 }
+
+// Inicializar al cargar la página
+window.addEventListener("DOMContentLoaded", () => {
+  saveVisitCount();
+  displayMenuItems(featuredItems);
+});

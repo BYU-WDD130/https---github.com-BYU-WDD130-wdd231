@@ -45,16 +45,20 @@
         <img src="images/profile.jpg" alt="student photo" width="200" height="250">
     </section>
 <section class="card" id="certificates">
-
     <h2>Web Certificate Courses</h2>
+    
     <div class="filters">
-                <button onclick="filterMenu('True')">All</button>
-                <button onclick="filterMenu('false')">CSE</button>
-                <button onclick="filterMenu('false')">WDD</button>
-    </div>
+                <button onclick="filterMenu('all')">All</button>
+                <button onclick="filterMenu('cse')">CSE</button>
+                <button onclick="filterMenu('wdd')">WDD</button>
+    </div> 
+  
+  </section>
+    <div id="menu-items" class="items-grid"></div>
+
       <ul id="courses" class="course-list"></ul>
       <p>Total Credits: <span id="credits">0</span></p>
-      </section>
+    
    </div>
     </main>
     <footer>
