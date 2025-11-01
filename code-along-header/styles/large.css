@@ -1,7 +1,7 @@
 @media only screen and (min-width: 38rem) {
 
   .section {
-      background-color: aliceblue;
+
       display: grid;
       grid-template-columns: 2fr 1fr;
       margin: 5px;
@@ -22,12 +22,15 @@
     }
 
 .photo {
+   background-color: rgb(97, 141, 182);
    text-align: center;
    border: 1px solid #ddd;
    margin: 0;
    border-radius: 5px;
 
 }
+
+
   .hamburger {
       display: none;
   }
@@ -52,7 +55,7 @@ h2 {
 #certificates {
   border: solid 1px #ddd;
   border-radius: 5px;
-  background-color: aliceblue;
+  background-color: rgb(97, 141, 182);
 }
 
 .navigation ul {
@@ -71,6 +74,7 @@ h2 {
 }
    
 #about-me {
+        background-color: rgb(97, 141, 182);
   border: 1px solid #ddd ;
   margin: 0;
   border-radius: 5px;
