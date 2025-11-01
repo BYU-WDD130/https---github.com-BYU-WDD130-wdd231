@@ -37,6 +37,7 @@ h2 {
 } 
 .navigation {
     display: block;
+  background-color: #3D405B;    
 
   }
 
@@ -47,6 +48,7 @@ h2 {
 }
 
 
+
 #certificates {
   border: solid 1px #ddd;
   border-radius: 5px;
@@ -54,9 +56,11 @@ h2 {
 }
 
 .navigation ul {
-    display: flex;
-    gap: 10px;
-    justify-content: center;
+  padding: 5px;
+  display: flex;
+  gap: 20px;
+
+  margin: 2px;
 
 }
 
