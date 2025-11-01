@@ -1,7 +1,7 @@
 const featuredItems = [
   { name: "Web Fundamentals", subject: "wdd", number: "130", credits: "2" },
   { name: "Introduction to Programming", subject: "cse", number: "110", credits: "2" },
-  { name: "Dynamic Web fundamentals", subject: "cse", number: "131", credits: "2" },
+  { name: "Dynamic Web fundamentals", subject: "wdd", number: "131", credits: "2" },
   { name: "Programing with clases", subject: "cse", number: "210", credits: "2" },
   { name: "Web Fronted Development I", subject: "wdd", number: "231", credits: "2" },
   { name: "Proraming whith functions", subject: "cse", number: "111", credits: "2" },
