@@ -3,33 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta decripton="Project Index Page">
-    <meta author="Dery Henriquez">
-    <title></title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <title>Document</title>
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/large.css">
-
-    <script src="scripts/navigation.js"></script>
-    <script src="scripts/courses.js"></script>
-    <script src="scripts/dates.js"></script>
-    
+    <script src="scripts/courserespaldo.js"></script>
+    <script src="scripts/getdate.js"></script>
+<!-- -->
 </head>
 <header>
-  <img src="images/logo.svg" alt="site logo" width="115" height="115">    
-    <span>Project Index Header</span>
-   <button id="ham-btn" class="hamburger"></button>
-   <nav class="nav-bar" id="navigation">
+  <img src="images/index-logo.svg" alt="site logo" width="115" height="115">
+  <span>Dery Henriquez</span>
+  <button id="ham-btn" class="hamburger"></button>
+     <nav id="nav-bar" class="navigation">
       <ul>
-        <li class="current"><a href="#">New Events</a></li>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">Chamber</a></li>
+        <li class="current"><a href="index.html">Home</a></li>
+        <li ><a href="about.html">Chamber</a></li>
         <li><a href="contact.html">Final</a></li>
     </ul>
  </nav>
 </header>
-<main>
- <h1>Home</h1> 
+<body>
+    <header></header>
+    <nav></nav>
+    <main>
+      <h1>Home</h1>
  <div class="section">
    <section class="card" id="about-me">
      <h2> About me </h2>   
@@ -45,24 +44,28 @@
 
         <h2>Student Photo</h2>
         <img src="images/profile.jpg" alt="student photo" width="200" height="250">
-    </section>
-
+    </section>    
+</div> 
 
 <section class="card" id="certificates">
-
     <h2>Web Certificate Courses</h2>
+    
     <div class="filters">
-                <button onclick="filterMenu('True')">All</button>
-                <button onclick="filterMenu('false')">CSE</button>
-                <button onclick="filterMenu('false')">WDD</button>
-    </div>
-      <ul id="courses" class="course-list"></ul>
-      <p>Total Credits: <span id="credits">0</span></p>
-      </section>
+                <button onclick="filterMenu('all')">All</button>
+                <button onclick="filterMenu('cse')">CSE</button>
+                <button onclick="filterMenu('wdd')">WDD</button>
+
+  
+ 
+  <div id="menu-items"></div>
+
+   </section>
+<p id="total-credits"><strong>Total Credits:</strong> 0</p>
+    
    </div>
-</main>
-<footer>
-          <div class="social">
+    </main>
+    <footer>
+      <div class="social">
            <a href="" target="_blank"><img src="images/facebook.svg" alt="facebook" width="16" height="16"> </a>
            <a href="" target="_blank"><img src="images/github.svg" alt="Github" width="16" height="16"> </a>
            <a href="" target="_blank"><img src="images/linkedin.svg" alt="Linked in " width="16" height="16"> </a>
@@ -70,9 +73,10 @@
       </div>
      <p> &copy; <span id="currentyear"></span> Dery Henriquez. New Jersey. </p> 
    <p id="LastModified"></p>
-      </footer>
 
-<body>
-    
+    </footer>
+    <script src="scripts/navigation.js"defer></script>
+
 </body>
 </html>
+
