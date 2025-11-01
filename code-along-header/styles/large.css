@@ -50,8 +50,6 @@ h2 {
 
 }
 
-
-
 #certificates {
   border: solid 1px #ddd;
   border-radius: 5px;
@@ -78,7 +76,10 @@ h2 {
   border: 1px solid #ddd ;
   margin: 0;
   border-radius: 5px;
+  justify-content: center;
 }
+
+
 
 .footer-p {
   font-size: 12px;
