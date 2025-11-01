@@ -80,14 +80,11 @@ h2 {
   border-radius: 5px;
 }
 
-.footer {
+.footer-p {
+  font-size: 12px;
 margin: .5rem auto;
 
 }
 
-.p {
-  color: black;
-  background-color: blueviolet;
-}
 
 }

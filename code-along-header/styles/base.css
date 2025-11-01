@@ -203,11 +203,7 @@ button:focus {
 }
 
 
-footer {
-    background-color: #eee;
-    padding: 1rem 10px;
-    text-align: center;
-}
+
 
 .social {
     display: flex;
@@ -232,4 +228,15 @@ footer {
 
 .social a:hover {
     background-color: #ddd;
+}
+
+
+footer {
+    background-color: #eee;
+    padding: 1rem 10px;
+    text-align: center;
+}
+
+.footer p {
+    font-size: 12px;
 }
