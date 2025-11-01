@@ -14,7 +14,7 @@
   },
   {
     name: "Dynamic Web fundamentals",
-    subject:  "cse",
+    subject:  "wdd",
     number: "131",
     credits: "2",
 
